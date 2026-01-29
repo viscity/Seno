@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 user_last_request = {}
 RATE_LIMIT_SECONDS = 5  
 
-AI_COMMANDS = ["ai", "gpt", "chatgpt", "gpt4", "gemini", "ami"]
+AI_COMMANDS = ["ai", "gpt", "chatgpt", "gpt4", "gemini", "attraction"]
 USAGE_CMDS = ["api", "apikey", "usage"]
 
 INSTANT_REPLIES = [
@@ -88,19 +88,6 @@ TTS_PROCESSING_MESSAGES = [
     "🎶 Crafting your voice message...",
     "📢 Converting to audio...",
     "🎙️ Preparing voice output..."
-]
-
-IMAGE_PROCESSING_MESSAGES = [
-    "🎨 Creating your image...",
-    "🖼️ Generating artwork...",
-    "🎭 Crafting visual masterpiece...",
-    "🖌️ Painting with AI...",
-    "📸 Capturing imagination...",
-    "🎨 Designing your vision...",
-    "🖼️ Building visual content...",
-    "🎭 Composing digital art...",
-    "🖌️ Rendering image...",
-    "📸 Processing visual request..."
 ]
 
 ERROR_MESSAGES = [
