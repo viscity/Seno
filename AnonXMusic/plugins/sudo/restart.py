@@ -64,7 +64,7 @@ async def update_(client, message, _):
         "tsnrhtdd"[(format // 10 % 10 != 1) * (format % 10 < 4) * format % 10 :: 4],
     )
     for info in repo.iter_commits(f"HEAD..origin/{config.UPSTREAM_BRANCH}"):
-        updates += f"<b>➣ #{info.count()}: <a href={REPO_}/commit/{info}>{info.summary}</a> ʙʏ -> {info.author}</b>\n\t\t\t\t<b>➥ ᴄᴏᴍᴍɪᴛᴇᴅ ᴏη :</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
+        updates += f"<b>➣ #{info.count()}: <a href={REPO_}/commit/{info}>{info.summary}</a> Ᏼʏ -> {info.author}</b>\n\t\t\t\t<b>➥ ᴄᴏϻϻɪτєᴅ ᴏη:</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
     _update_response_ = "<b>Λ ηᴇᴡ ʋᴩᴅαᴛє ɪs ᴀᴠєɪʟαʙʟє ғᴏᴙ ᴛʜє Ᏼᴏᴛ !</b>\n\n➣ ᴩᴜsʜɪηɢ ᴜᴩᴅᴀᴛєs ηᴏᴡ\n\n<b><u>ᴜᴩᴅᴀᴛєs:</u></b>\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
