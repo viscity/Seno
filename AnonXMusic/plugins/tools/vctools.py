@@ -33,7 +33,7 @@ async def brah2(_, msg):
 async def brah3(app: app, message: Message):
     text = f"➻ {message.from_user.mention}\n\n**๏ ɪηᴠɪτɪηg ɪη ᴠᴄ τᴏ ᰔ :**\n\n**➻ **"
     x = 0
-    for user in message.video_chat_members_invited.users:
+        for user in message.video_chat_members_invited.users:
         try:
             text += f"[{user.first_name}](tg://user?id={user.id}) "
             x += 1
