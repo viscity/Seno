@@ -74,6 +74,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
+    ]
     
     return buttons
 
@@ -94,7 +95,7 @@ def stream_markup(_, chat_id):
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
-   
+    ]
     
     return buttons
 
